@@ -6,10 +6,12 @@ import (
 )
 
 // StringFlag is a flag.Value that allows me to tell if the flag was set
-//   and yet I can still fall back to the default value
+// and yet I can still fall back to the default value
+//
 // Default should be set to the default string value of the flag
 // Validator should be set to a function to validate the flag.
-//   Type is func(string)bool and it should return true on valid values
+//
+// Type is func(string)bool and it should return true on valid values
 type StringTrap struct {
 	string
 	isSet     bool
